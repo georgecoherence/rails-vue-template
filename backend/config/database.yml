@@ -53,4 +53,3 @@ production:
   username: <%= ENV.fetch("DB_USER") %>
   password: <%= ENV.fetch("DB_PASSWORD") %>
   host: localhost
-  socket: <%= ENV["RAILS_VUE_EXAMPLE_TEST1_BACKEND_DB1_SOCKET"] %>

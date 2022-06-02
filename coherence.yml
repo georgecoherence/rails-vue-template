@@ -16,7 +16,7 @@ frontend:
 
 backend:
   type: backend
-  url_path: /
+  url_path: /api/
   repo_path: backend
   docs: []
   migration: ["rails", "db:migrate"]
