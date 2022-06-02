@@ -19,7 +19,7 @@ backend:
   url_path: /
   repo_path: backend
   docs: []
-  migration: []
+  migration: ["rails", "db:migrate"]
   seed: []
   dev: ["./entrypoint"]
   test: []

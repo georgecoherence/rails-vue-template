@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Be sure to set `RAILS_MASTER_KEY` to `3717046dacbea967518d7bf4b113676f`
