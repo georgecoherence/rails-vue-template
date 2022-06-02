@@ -2,7 +2,7 @@
   "name": "vite-vue-tailwind-jit",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 8910",
     "build": "vite build",
     "serve": "vite preview"
   },
