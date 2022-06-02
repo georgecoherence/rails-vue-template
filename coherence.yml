@@ -1,18 +1,18 @@
-# frontend:
-#   type: frontend
-#   # index_file_name: index.html
-#   url_path: /
-#   repo_path: frontend
-#   assets_path: build
-#   docs: []
-#   install: ["yarn", "install"]
-#   build: ["yarn", "build"]
-#   test: []
-#   dev: ["yarn", "dev"]
+frontend:
+  type: frontend
+  index_file_name: index.html
+  url_path: /
+  repo_path: frontend
+  assets_path: build
+  docs: []
+  install: ["yarn", "install"]
+  build: ["yarn", "build"]
+  test: []
+  dev: ["yarn", "dev"]
   
-#   system:
-#     dev:
-#       port: 8910
+  system:
+    dev:
+      port: 8910
 
 backend:
   type: backend
