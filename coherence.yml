@@ -5,6 +5,7 @@ frontend:
   repo_path: frontend
   assets_path: build
   docs: []
+  local_packages: ["node_modules"]
   install: ["yarn", "install"]
   build: ["yarn", "build"]
   test: []
