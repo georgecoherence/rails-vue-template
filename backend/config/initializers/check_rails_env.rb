@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-if ENV['COHERENCE_DEV']
-    Rails.env = "development"
-elsif ENV['COHERENCE_TEST']
-    Rails.env = "test"
-else
+unless ENV['COHERENCE_DEV'] || ENV['COHERENCE_TEST']
     Rails.env = "production"
 end
