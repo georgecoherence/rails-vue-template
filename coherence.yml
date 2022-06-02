@@ -1,0 +1,42 @@
+# frontend:
+#   type: frontend
+#   # index_file_name: index.html
+#   url_path: /
+#   repo_path: frontend
+#   assets_path: build
+#   docs: []
+#   install: ["yarn", "install"]
+#   build: ["yarn", "build"]
+#   test: []
+#   dev: ["yarn", "dev"]
+  
+#   system:
+#     dev:
+#       port: 8910
+
+backend:
+  type: backend
+  url_path: /
+  repo_path: backend
+  docs: []
+  migration: []
+  seed: []
+  dev: ["./entrypoint"]
+  test: []
+  prod: ["./entrypoint"]
+
+  system:
+    dev:
+      port: 4000
+    memory: 2G
+    cpu: 1
+    platform_settings:
+      min_scale: 1
+      throttle_cpu: false
+      execution_environment: gen2
+
+  resources:
+  - name: db1
+    engine: postgres
+    version: 13
+    type: database
