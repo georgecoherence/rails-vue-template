@@ -4,11 +4,9 @@ frontend:
   url_path: /
   repo_path: frontend
   assets_path: dist
-  docs: []
   local_packages: ["node_modules"]
   install: ["yarn", "install"]
   build: ["yarn", "build"]
-  test: []
   dev: ["yarn", "dev"]
   
   system:
@@ -19,22 +17,13 @@ backend:
   type: backend
   url_path: /api/
   repo_path: backend
-  docs: []
   migration: ["rails", "db:migrate"]
-  seed: []
   dev: ["./entrypoint"]
-  test: []
   prod: ["./entrypoint"]
 
   system:
     dev:
       port: 4000
-    memory: 2G
-    cpu: 1
-    platform_settings:
-      min_scale: 1
-      throttle_cpu: false
-      execution_environment: gen2
 
   resources:
   - name: db1
